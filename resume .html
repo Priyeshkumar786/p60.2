@@ -572,3 +572,5 @@ jj
 <script>
   var resourceVersion = "5.14.1";
   function readDataLayerValue(a){if(typeof dataLayer=="undefined"|| !dataLayer||0==dataLayer.length)return null;for(var r=0;r<dataLayer.length;r++)if(a in dataLayer[r])return dataLayer[r][a];return null}
+  function setDataLayer(a,e){null!=readDataLayerValue(e)&&ga("set",a,readDataLayerValue(e))}
+
